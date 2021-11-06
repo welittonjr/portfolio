@@ -1,138 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>HostPlan</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Wellington | Web Developer </title>
 </head>
+
 <body>
-
-    <div class="container">
-        <div class="navbar-container">
-            <nav>
-                <a href="#"><img src="img/hdchostloho.png" alt="logo"></a>
-                <ul class="navbar-items">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Planos</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#" class="default-btn">Login</a></li>
-                </ul>
-            </nav>
-        </div>
+  <aside class="sidebar">
+    <div class="logo">
+      <a class="logo-initials" href="/">W</a>
+      <p class="logo-description">Web Developer</p>
     </div>
-
-    <main>
-        <div class="main-banner">
-            <h1>HostPlan</h1>
-            <p>Os melhores planos para qual quer tipo de projeto!</p>
+    <nav>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#welcome">Bem vindo</a>
+        </li>
+        <li class="menu-item">
+          <a href="#about">Sobre</a>
+        </li>
+        <li class="menu-item">
+          <a href="#skill">Habilidades</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="social">
+      <li class="social-item">
+        <a href="#" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="#" target="_blank">
+          <i class="fab fa-github-square"></i>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="#" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <div class="container-wrapper">
+    <section class="content-line" id="welcome"></section>
+    <div class="presentation">
+      <h1>
+        Olá,
+      </h1>
+      <h1>
+        Me chamo
+      </h1>
+      <h1>
+        Wellington Junior
+      </h1>
+      <p>Web Developer</p>
+      <a class="btn-contact" href="#contact">Contato</a>
+    </div>
+    <section class="content-line" id="about">
+      <div class="first-comlumn">
+        <h1 class="content-title">Sobre min</h1>
+        <div class="about-img">
+          <img src="./images/wellington.jpg" alt="Wellington Junior">
         </div>
-        <section class="specialties-container">
-            <ul>
-                <li>
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Segurança</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere placerat lacus, ac auctor urna eleifend vitae. Fusce volutpat mi risus, sit amet molestie neque malesuada eget. Sed nec risus quam. Cras metus odio, ullamcorper at justo ac, interdum euismod ante. Nunc sodales lorem vel nunc sodales, non consequat urna consequat. Nunc eu dui dignissim, elementum libero ac, dictum massa. Etiam eget odio eu lacus tristique vulputate. Vivamus nisl justo, iaculis quis porttitor non, maximus a elit. Etiam leo leo, tempus et vulputate at, hendrerit ut elit. 
-                    </p>
-                </li>
-                <li>
-                    <i class="fas fa-rocket"></i>
-                    <h3>Velocidade</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere placerat lacus, ac auctor urna eleifend vitae. Fusce volutpat mi risus, sit amet molestie neque malesuada eget. Sed nec risus quam. Cras metus odio, ullamcorper at justo ac, interdum euismod ante. Nunc sodales lorem vel nunc sodales, non consequat urna consequat. Nunc eu dui dignissim, elementum libero ac, dictum massa. Etiam eget odio eu lacus tristique vulputate. Vivamus nisl justo, iaculis quis porttitor non, maximus a elit. Etiam leo leo, tempus et vulputate at, hendrerit ut elit. 
-                    </p>
-                </li>
-                <li>
-                    <i class="fas fa-comments"></i>
-                    <h3>Suporte</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere placerat lacus, ac auctor urna eleifend vitae. Fusce volutpat mi risus, sit amet molestie neque malesuada eget. Sed nec risus quam. Cras metus odio, ullamcorper at justo ac, interdum euismod ante. Nunc sodales lorem vel nunc sodales, non consequat urna consequat. Nunc eu dui dignissim, elementum libero ac, dictum massa. Etiam eget odio eu lacus tristique vulputate. Vivamus nisl justo, iaculis quis porttitor non, maximus a elit. Etiam leo leo, tempus et vulputate at, hendrerit ut elit. 
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section class="princing-container">
-            <h1>Planos e serviços</h1>
-            <p>Selecione o plano perfeito para você</p>
-            <div class="plans-container">
-                <div class="plan">
-                    <ul>
-                        <li class="price">R$15/mês</li>
-                        <li class="plan-me">Padrão</li>
-                        <li>2GB de espaço em disco</li>
-                        <li>10 Sub-domínios</li>
-                        <li>15 Contas de E-mail</li>
-                        <li>C-Panel</li>
-                        <li>Suporte 24/7</li>
-                        <li class="plan-btn">Selecionar</li>
-                    </ul>
-                </div>
-                <div class="plan">
-                    <ul>
-                        <li class="price">R$30/mês</li>
-                        <li class="plan-me">Dedicado</li>
-                        <li>4GB de espaço em disco</li>
-                        <li>20 Sub-domínios</li>
-                        <li>25 Contas de E-mail</li>
-                        <li>C-Panel</li>
-                        <li>Suporte 24/7</li>
-                        <li class="plan-btn">Selecionar</li>
-                    </ul>
-                </div>
-                <div class="plan">
-                    <ul>
-                        <li class="price recommended">R$45/mês</li>
-                        <li class="plan-me">Dedicado Plus</li>
-                        <li>8GB de espaço em disco</li>
-                        <li>30 Sub-domínios</li>
-                        <li>35 Contas de E-mail</li>
-                        <li>C-Panel</li>
-                        <li>Suporte 24/7</li>
-                        <li class="plan-btn recommended">Selecionar</li>
-                    </ul>
-                </div>
-                <div class="plan">
-                    <ul>
-                        <li class="price">R$55/mês</li>
-                        <li class="plan-me">CLOUD</li>
-                        <li>16GB de espaço em disco</li>
-                        <li>40 Sub-domínios</li>
-                        <li>45 Contas de E-mail</li>
-                        <li>C-Panel</li>
-                        <li>Suporte 24/7</li>
-                        <li class="plan-btn">Selecionar</li>
-                    </ul>
-                </div>
+      </div>
+      <div class="second-column">
+        <div class="content-description">
+          <p class="content-paragraph">
+            A principal área de meu interesse é o full stack. Minha paixão por código começou quando ganhei meu primeiro
+            computador era algo tudo novo, e assim descobrir a programação, iniciei com a linguagem C, depois fui para o
+            lado da web com HTML, CSS, JS.
+          </p >
+          <p class="content-paragraph">
+            Tive muitas oportunidades de trabalhar com amplas tecnologias da web, o
+            que me permitiu reunir uma quantidade significativa de várias experiências. Trabalhando para empresas e
+            indivíduos em todo o brasil, conheci e aprendi muito com pessoas incríveis.
+          </p>
+          <p class="content-paragraph">
+            Atualmente trabalho remotamente em uma empresa do sul, e com uma base de clientes freelance.
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <section class="content-line" id="skill">
+      <div class="first-comlumn">
+        <h1 class="content-title">Habilidade e Experiência</h1>
+        <div class="content-description skill-description">
+          <p class="content-paragraph">
+            Desde o início da minha jornada como desenvolvedor há quase 5 anos, fiz diversos projetos, sempre atuando
+            como desenvolverdor <strong>back-end</strong>, fiz parte de startups e colaborei em grandes empresas do sul
+            com pessoas talentosas que criaram grandes produtos web para uso comercial como a veggi.
+          </p>
+          <p class="content-paragraph">
+            Durante essa jornada descobrir outras paixões no mundo da tecnologia, o <strong>front-end</strong> desde
+            então, sempre estou treinando e estudando buscando ficar melhor a cada dia, atualmente não uso frameworks
+            CSS, desenvolvo tudo de forma pura e massiva HTML, CSS, JS, com CSS usando sempre Flexbox e Grid.
+          </p>
+          <p class="content-paragraph">
+            Minhas maiores habilidades são com <strong>back-end</strong>, desenvolvendo microsserviços, Apis Restfull
+            etc.
+            Também tenho experiência de desenvolvedor full-stack com (Angular e ExpressJs).
+          </p>
+          <p class="content-paragraph">
+            Visite meu perfil no LinkedIn para mais detalhes ou apenas entre em contato comigo.
+          </p>
+        </div>
+      </div>
+      <div class="second-column">
+        <div class="content-description experiences">
+          <div class="experience-card">
+            <div class="experience-header">
+              <h1>Full Stack Developer</h1>
             </div>
-        </section>
-        <section class="searchdomain-container">
-            <h2>Buscar um dominio</h2>
-            <p>Veja se o domínio que você deseja está disponivel</p>
-            <form>
-                <input type="text" name="domain" placeholder="Digite seu dominio desejado">
-                <input type="submit" value="Buscar Dominio">
-            </form>
-        </section>
-        <section class="contact-container">
-            <h2>Entre em contato</h2>
-            <p>Mande uma mensagem para nós conversamos sobre o melhor plano de hospedagem para seu negócio.</p>
-            <form >
-                <input type="text" name="name" placeholder="Seu nome">
-                <input type="email" name="email" placeholder="Seu E-mail">
-                <textarea name="message" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
-    <footer>
-        Wellington &copy; <span id="ano"></span>
-    </footer>
-    
-    <script src="https://kit.fontawesome.com/bf7e05c402.js"></script>
-    <script>
-        document.getElementById("ano").innerHTML = new Date().getFullYear();
-    </script>
+            <div class="experience-body">
+              <p>LoboDeveloper</p>
+              <p>2017-2019</p>
+            </div>
+            <div class="experience-footer">
+              <p>
+                Projetos para vendas de ingressos e controles de lojas.
+              </p>
+            </div>
+          </div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <h1>Back End Developer</h1>
+            </div>
+            <div class="experience-body">
+              <p>Incuca</p>
+              <p>2019-2020</p>
+            </div>
+            <div class="experience-footer">
+              <p>
+                Projetos para gestão em diversas areas de negocio
+              </p>
+            </div>
+          </div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <h1>Back End Developer</h1>
+            </div>
+            <div class="experience-body">
+              <p>MadeiraMadeira</p>
+              <p>2021-Atualmente</p>
+            </div>
+            <div class="experience-footer">
+              <p>
+                Projetos em microsserviços para controle de logistica da empresa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-line" id="contact">
+      <div class="first-comlumn">
+        <h1 class="content-title"> Contato </h1>
+        <div class="content-description contact-form">
+          <form class="form-grid" action="">
+            <input type="text" name="" id="" placeholder="Nome" />
+            <input type="text" name="" id="" placeholder="E-mail" />
+            <input type="text" name="" id="" placeholder="Titulo">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"> </textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="column-map">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8328767246317!2d-47.930646484730055!3d-1.2734617359727638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a5af7887719f59%3A0xa69403cfb4d0b968!2sTv.%20Edmundo%20Freitas%20-%20Estrela%2C%20Castanhal%20-%20PA!5e0!3m2!1spt-BR!2sbr!4v1636231501388!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="./js/particles.min.js"></script>
+  <script src="./js/backgroud-particles.js"> </script>
 </body>
+
 </html>
