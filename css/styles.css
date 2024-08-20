@@ -23,6 +23,7 @@
   justify-content: space-between;
 }
 
+/** LOGO **/
 .logo {
   height: 120px;
   width: 100%;
@@ -33,7 +34,7 @@
   align-items: center;
 }
 
-.logo-initials, .logo-description {
+.logo__subtitle, .logo__description {
   color: var(--color-white);
   display: flex;
   justify-content: center;
@@ -41,19 +42,21 @@
   width: 115px;
 }
 
-.logo-initials {
+.logo__subtitle {
   font-size: 70px;
   font-family: 'Righteous', cursive;
   height: 70px;
   text-decoration: none;
 }
 
-.logo-description {
+.logo__description {
   font-size: 12px;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #909096;
 }
+
+/** LOGO **/
 
 .sidebar > nav {
   height: 200px;
