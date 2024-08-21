@@ -142,19 +142,24 @@
   padding: 10px 20px;
 }
 
-.content__section {
+/* CONTENT */
+
+
+/* BOX */
+.box {
   height: auto;
   width: 100%;
   padding: 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 1400px) {
 
-  .content__section {
+  .box {
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -165,7 +170,7 @@
 
 @media (max-width: 800px) {
 
-  .content__section {
+  .box {
     margin-top: 10rem;
   }
 
@@ -173,25 +178,14 @@
 
 @media (max-width: 700px) {
 
-  .content__section {
+  .box {
     margin-top: 10rem;
   }
 
 }
 
-/* CONTENT */
 
-.first-comlumn,
-.second-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
-  width: 700px;
-  height: 70%;
-}
-
-.content-title {
+.box__title {
   font-size: 67px;
   width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -199,8 +193,49 @@
   color: var(--color-white);
 }
 
-.content-description {
-  margin-top: 7rem;
+.box__body {
+  display: flex;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/* BOX */
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+  width: 900px;
+  height: auto;
+  flex: 1;
+}
+
+@media (max-width: 1400px) {
+
+  .column {
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .column {
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 300px) {
+
+  .column {
+    width: 100%;
+    align-items: center;
+  }
+
 }
 
 .content-paragraph {
@@ -208,7 +243,8 @@
   font-weight: 300;
   font-size: 24px;
   color: #909096;
-  margin-top: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
@@ -401,7 +437,6 @@
 /* Start about me */
 .about-img {
   width: 100%;
-  margin-top: 60px;
 }
 
 .about-img>img {
@@ -420,15 +455,11 @@
 
 /* Start Skill and Experience */
 
-.skill-description {
-  margin-top: 30px;
-}
 
 .experiences {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
-  margin-top: 7rem;
 }
 
 .experience-card {
@@ -570,12 +601,6 @@ textarea {
     flex-direction: row;
   }
 
-  .first-comlumn,
-  .second-column {
-    width: 100%;
-    align-items: center;
-  }
-
   .about-img {
     width: auto;
     margin-top: 60px;
@@ -620,12 +645,6 @@ textarea {
 
 @media (max-width: 700px) {
 
-  .first-comlumn,
-  .second-column {
-    width: 100%;
-    align-items: center;
-  }
-
   .experiences {
     display: flex;
     flex-direction: column;
@@ -669,12 +688,6 @@ textarea {
 }
 
 @media (max-width: 300px) {
-
-  .first-comlumn,
-  .second-column {
-    width: 100%;
-    align-items: center;
-  }
 
   .content-description {
     margin-top: 20px !important;
