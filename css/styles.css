@@ -87,6 +87,10 @@
   align-items: center;
 }
 
+.menu-item:hover {
+  background-color: var(--color-second);
+}
+
 .social {
   list-style: none;
   height: 200px;
@@ -102,6 +106,18 @@
   text-decoration: none;
   color: #909096;
   font-size: 25px;
+}
+
+.linkedin>a:hover {
+  color: #0077B5;
+}
+
+.github>a:hover {
+  color: #333333;
+}
+
+.instagram>a:hover {
+  color: #E4405F;
 }
 
 /* end sidebar */
@@ -201,7 +217,7 @@
 
 /* BOX */
 
-.column{
+.column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -299,7 +315,7 @@
 
 .presentation__role {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 30px;
   color: #d1d1d1;
   margin-top: 20px;
   animation: fadeInup 1s ease-out;
@@ -458,7 +474,7 @@
 
 .experiences {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: auto;
 }
 
