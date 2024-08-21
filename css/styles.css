@@ -59,36 +59,75 @@
 
 /** LOGO **/
 
-.sidebar>nav {
-  height: 200px;
+.nav {
+  width: 100%;
 }
 
-.menu {
+.nav__menu {
   list-style: none;
   height: 100%;
   width: 100%;
   border-top: 1px solid var(--color-second);
 }
 
-.menu-item {
+.nav__item {
   width: 100%;
-  height: 50px;
+  /* padding: 10px 0px; */
+  border-bottom: 1px solid var(--color-second);
 }
 
-.menu-item>a {
+.nav__item:hover {
+  background-color: var(--color-second);
+}
+
+.nav__link {
   text-decoration: none;
   color: #909096;
   font-family: 'Roboto', sans-serif;
-  border-bottom: 1px solid var(--color-second);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 15px;
+  display: block;
+  cursor: pointer;
 }
 
-.menu-item:hover {
+.nav__item--has-submenu .nav__link--toggle::after {
+  content: "▼";
+  float: right;
+}
+
+.nav__submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.nav__submenu-item {
+  background-color: #333;
+}
+
+.nav__submenu-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  display: block;
+  border-bottom: 1px solid var(--color-second);
+}
+
+.nav__submenu-link:hover {
   background-color: var(--color-second);
+}
+
+.nav__item--active .nav__submenu {
+  max-height: 100px;
+  overflow: auto;
+  transition: max-height 0.3s ease-in;
+}
+
+.nav__item--active .nav__link--toggle::after {
+  content: "▲";
 }
 
 .social {
