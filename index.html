@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
       <div class="logo">
         <a class="logo__subtitle" href="/">WJ</a>
         <p class="logo__description">Software Engineer</p>
@@ -27,9 +27,6 @@
           </li>
           <li class="nav__item">
             <a href="#skill" class="nav__link">Habilidades</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contato</a>
           </li>
           <!-- <li class="nav__item nav__item--has-submenu">
             <a class="nav__link nav__link--toggle">Sobre</a>
@@ -64,6 +61,11 @@
     </aside>
     <div class="wrapper">
       <section class="background__animation" id="welcome">
+        <label id="nav-toggle" class="toggle__hamburguer">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
         <div class="presentation">
           <h1 class="presentation__greeting">
             Olá, Me chamo <span class="presentation__name">Wellington
@@ -198,31 +200,12 @@
             </div>
           </div>
         </section>
-        <section class="box" id="contact">
-          <h1 class="box__title"> Contato </h1>
-          <div class="box__body">
-            <div class="column">
-              <div class="content-description contact-form">
-                <form class="form-grid" action>
-                  <input type="text" name id placeholder="Nome" />
-                  <input type="text" name id placeholder="E-mail" />
-                  <input type="text" name id placeholder="Titulo">
-                  <textarea name id cols="30" rows="10"
-                    placeholder="Mensagem"> </textarea>
-                  <button type="submit">Enviar</button>
-                </form>
-              </div>
-            </div>
-            <div class="column">
-              <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8328767246317!2d-47.930646484730055!3d-1.2734617359727638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a5af7887719f59%3A0xa69403cfb4d0b968!2sTv.%20Edmundo%20Freitas%20-%20Estrela%2C%20Castanhal%20-%20PA!5e0!3m2!1spt-BR!2sbr!4v1636231501388!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen
-                loading="lazy"></iframe>
-            </div>
-          </div>
-        </section>
       </div>
 
+      <a href="https://wa.me/91981994580" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      
       <footer class="footer">
         <div class="footer__content">
           <p class="footer__copyright">Wellington &copy; 2024. Todos os direitos reservados.</p>
