@@ -1,77 +1,56 @@
-document.querySelectorAll('.nav__link--toggle').forEach(item => {
-  item.addEventListener('click', function (e) {
+$(function () {
+  $(".menu-toggle").on("click", function (e) {
     e.preventDefault();
 
-    const parentItem = this.parentElement;
+    const $parentItem = $(this).parent();
 
-    document.querySelectorAll('.nav__item--active').forEach(activeItem => {
-      if (activeItem !== parentItem) {
-        activeItem.classList.remove('nav__item--active');
-        activeItem.querySelector('.nav__submenu').style.maxHeight = 0;
+    $(".menu-item--active").each(function () {
+      if (!$(this).is($parentItem)) {
+        $(this).removeClass("menu-item--active");
+        $(this).find(".submenu").css("max-height", 0);
       }
     });
 
-    const submenu = parentItem.querySelector('.nav__submenu');
-    if (parentItem.classList.contains('nav__item--active')) {
-      submenu.style.maxHeight = 0;
-      parentItem.classList.remove('nav__item--active');
+    const $submenu = $parentItem.find(".submenu");
+
+    if ($parentItem.hasClass("menu-item--active")) {
+      $submenu.css("max-height", 0);
+      $parentItem.removeClass("menu-item--active");
     } else {
-      submenu.style.maxHeight = submenu.scrollHeight + 'px';
-      parentItem.classList.add('nav__item--active');
+      $submenu.css("max-height", $submenu[0].scrollHeight + "px");
+      $parentItem.addClass("menu-item--active");
     }
   });
-});
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const navToggle = document.getElementById('nav-toggle');
-  const sidebar = document.getElementById('sidebar');
-  const wrapper = document.querySelector('.wrapper');
+  const $navToggle = $("#nav-toggle");
+  const $sidebar = $("#sidebar");
+  const $wrapper = $(".wrapper");
 
   function handleResize() {
-    if (window.innerWidth <= 1400) {
-      // Ajustes para telas menores
-      sidebar.style.display = 'none'; // Esconde a sidebar por padrão
-      wrapper.style.marginLeft = '0';
-      wrapper.style.width = '100%';
+    if ($(window).width() <= 1400) {
+      $sidebar.hide();
+      $wrapper.css({ "margin-left": "0", width: "100%" });
     } else {
-      // Ajustes para telas maiores
-      sidebar.style.display = 'flex';
-      wrapper.style.marginLeft = '130px';
-      wrapper.style.width = 'calc(100% - 130px)';
+      $sidebar.show();
+      $wrapper.css({ "margin-left": "130px", width: "calc(100% - 130px)" });
     }
   }
 
-  // Verifica o tamanho da tela ao carregar a página
   handleResize();
 
-  // Verifica o tamanho da tela quando a janela é redimensionada
-  window.addEventListener('resize', handleResize);
+  $(window).on("resize", handleResize);
 
-  navToggle.addEventListener('click', function () {
-    if (window.innerWidth <= 1400) {
-      // Toggle para telas menores
-      sidebar.classList.toggle('sidebar__toggle--show');
-      if (sidebar.classList.contains('sidebar__toggle--show')) {
-        sidebar.style.display = 'flex';
-      } else {
-        sidebar.style.display = 'none';
-      }
+  $navToggle.on("click", function () {
+    if ($(window).width() <= 1400) {
+      $sidebar.toggleClass("sidebar__toggle--show");
+      $sidebar.hasClass("sidebar__toggle--show") ? $sidebar.css("display", "flex") : $sidebar.hide();
     } else {
-      // Toggle para telas maiores
-      sidebar.classList.toggle('sidebar__toggle--show');
-      if (sidebar.classList.contains('sidebar__toggle--show')) {
-        wrapper.style.marginLeft = '0';
-        wrapper.style.width = '100%';
+      $sidebar.toggleClass("sidebar__toggle--show");
+      if ($sidebar.hasClass("sidebar__toggle--show")) {
+        $wrapper.css({ "margin-left": "0", width: "100%" });
       } else {
-        wrapper.style.marginLeft = '130px';
-        wrapper.style.width = 'calc(100% - 130px)';
+        $wrapper.css({ "margin-left": "130px", width: "calc(100% - 130px)" });
       }
     }
   });
 });
-
-
-
-
-
