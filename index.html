@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/font-awesome.all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Wellington | Software Engineer </title>
+    <title>Wellington | Web Developer</title>
   </head>
-
   <body>
+
+    <header>
+      <div id="welcome">
+        <label class="sidebar-toggle" id="nav-toggle" >
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
+        <div class="presentation">
+          <h1>
+            Olá, Me chamo <span>Wellington Junior</span>
+          </h1>
+          <p>I'm a Backend Software Engineer</p>
+        </div>
+      </div>
+    </header>
+
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <a class="logo-acronym" href="/">WJ</a>
@@ -21,13 +35,13 @@
         <li class="menu-item"><a href="#welcome">Bem vindo</a></li>
         <li class="menu-item"><a href="#about">Sobre</a></li>
         <li class="menu-item"><a href="#skill">Habilidades</a></li>
-        <!-- <li class="menu-item menu-item--has-submenu">
+        <li class="menu-item menu-item--has-submenu">
           <a class="menu-toggle">Projetos</a>
           <ul class="submenu">
             <li class="submenu-item"><a href="#" >Projeto 1</a></li>
             <li class="submenu-item"><a href="#">Projeto 2</a></li>
           </ul>
-        </li> -->
+        </li>
       </ul>
       <ul class="sidebar-social">
         <li class="social-item linkedin">
@@ -47,166 +61,147 @@
         </li>
       </ul>
     </aside>
+    
     <div class="wrapper">
-      <section class="background__animation" id="welcome">
-        <label id="nav-toggle" class="toggle__hamburguer">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </label>
-        <div class="presentation">
-          <h1 class="presentation__greeting">
-            Olá, Me chamo <span class="presentation__name">Wellington
-              Junior</span>
-          </h1>
-          <p class="presentation__role">I'm a Backend Software Engineer</p>
+      <section class="box" id="about">
+        <div class="box__body">
+          <div class="column">
+            <div class="about-img">
+              <img src="./images/wellington.jpg" alt="Wellington Junior">
+            </div>
+          </div>
+          <div class="column">
+            <div class="content-description">
+              <p class="content-paragraph">
+                Olá, tudo bem? Meu nome é Wellington, e sou um desenvolvedor
+                de software com 7 anos de experiência, atuando principalmente
+                como desenvolvedor backend. Recentemente, comecei a explorar o
+                mundo do frontend, impulsionado pela minha paixão por
+                tecnologia, que começou quando ganhei meu primeiro computador.
+                Naquela época, tudo era novo para mim, e foi assim que
+                descobri o universo da programação. Iniciei minha jornada com
+                a linguagem C, depois mergulhei no desenvolvimento web, e
+                desde então, não parei mais.
+              </p>
+              <p class="content-paragraph">
+                Atualmente, trabalho como desenvolvedor backend com foco em
+                Golang, sempre pensando em arquitetura e buscando aprender
+                novas tecnologias. Minha trajetória me permitiu acumular uma
+                vasta gama de experiências.
+              </p>
+              <p class="content-paragraph">
+                Além do desenvolvimento de software, sou apaixonado por música
+                clássica e jazz, gosto de jogar PUBG e sou músico na igreja,
+                já que sou cristão.
+              </p>
+
+            </div>
+          </div>
         </div>
       </section>
-
-      <div class="content">
-        <section class="box" id="about">
-          <h1 class="box__title">Sobre min</h1>
-          <div class="box__body">
-            <div class="column">
-              <div class="about-img">
-                <img src="./images/wellington.jpg" alt="Wellington Junior">
-              </div>
-            </div>
-            <div class="column">
-              <div class="content-description">
-                <p class="content-paragraph">
-                  Olá, tudo bem? Meu nome é Wellington, e sou um desenvolvedor
-                  de software com 7 anos de experiência, atuando principalmente
-                  como desenvolvedor backend. Recentemente, comecei a explorar o
-                  mundo do frontend, impulsionado pela minha paixão por
-                  tecnologia, que começou quando ganhei meu primeiro computador.
-                  Naquela época, tudo era novo para mim, e foi assim que
-                  descobri o universo da programação. Iniciei minha jornada com
-                  a linguagem C, depois mergulhei no desenvolvimento web, e
-                  desde então, não parei mais.
-                </p>
-                <p class="content-paragraph">
-                  Atualmente, trabalho como desenvolvedor backend com foco em
-                  Golang, sempre pensando em arquitetura e buscando aprender
-                  novas tecnologias. Minha trajetória me permitiu acumular uma
-                  vasta gama de experiências.
-                </p>
-                <p class="content-paragraph">
-                  Além do desenvolvimento de software, sou apaixonado por música
-                  clássica e jazz, gosto de jogar PUBG e sou músico na igreja,
-                  já que sou cristão.
-                </p>
-
-              </div>
+      <section class="box" id="skill">
+        <h1 class="box__title">Habilidade e Experiência</h1>
+        <div class="box__body">
+          <div class="column">
+            <div class="content-description skill-description">
+              <p class="content-paragraph">
+                Desde o início da minha jornada como desenvolvedor, há quase 7
+                anos, participei de uma série de projetos, principalmente como
+                desenvolvedor back-end. Durante esse período, trabalhei em
+                startups e colaborei com grandes empresas, contribuindo para a
+                criação de produtos web significativos.
+              </p>
+              <p class="content-paragraph">
+                Ao longo do tempo, descobri outras paixões na área de
+                tecnologia. Embora eu tenha começado como desenvolvedor
+                back-end, também mergulhei no front-end, onde explorei
+                profundamente HTML, CSS e JavaScript, preferindo desenvolver
+                tudo de forma pura,
+                utilizando intensivamente Flexbox e Grid.
+              </p>
+              <p class="content-paragraph">
+                Atualmente, minha principal área de atuação continua sendo o
+                back-end, onde desenvolvo microsserviços e APIs Restful. Além
+                disso, possuo experiência como desenvolvedor full-stack,
+                utilizando tecnologias como Angular e ExpressJs.
+              </p>
+              <p class="content-paragraph">
+                Recentemente, meu foco se voltou para áreas de DevOps e
+                Golang, onde estou expandindo minhas habilidades e
+                conhecimentos para complementar minha experiência.
+                Estou constantemente aprendendo e me desafiando a melhorar
+                cada dia mais.
+              </p>
+              <p class="content-paragraph">
+                Para mais detalhes sobre minha trajetória ou para entrar em
+                contato, visite meu perfil no LinkedIn.
+              </p>
             </div>
           </div>
-        </section>
-        <section class="box" id="skill">
-          <h1 class="box__title">Habilidade e Experiência</h1>
-          <div class="box__body">
-            <div class="column">
-              <div class="content-description skill-description">
-                <p class="content-paragraph">
-                  Desde o início da minha jornada como desenvolvedor, há quase 7
-                  anos, participei de uma série de projetos, principalmente como
-                  desenvolvedor back-end. Durante esse período, trabalhei em
-                  startups e colaborei com grandes empresas, contribuindo para a
-                  criação de produtos web significativos.
-                </p>
-                <p class="content-paragraph">
-                  Ao longo do tempo, descobri outras paixões na área de
-                  tecnologia. Embora eu tenha começado como desenvolvedor
-                  back-end, também mergulhei no front-end, onde explorei
-                  profundamente HTML, CSS e JavaScript, preferindo desenvolver
-                  tudo de forma pura,
-                  utilizando intensivamente Flexbox e Grid.
-                </p>
-                <p class="content-paragraph">
-                  Atualmente, minha principal área de atuação continua sendo o
-                  back-end, onde desenvolvo microsserviços e APIs Restful. Além
-                  disso, possuo experiência como desenvolvedor full-stack,
-                  utilizando tecnologias como Angular e ExpressJs.
-                </p>
-                <p class="content-paragraph">
-                  Recentemente, meu foco se voltou para áreas de DevOps e
-                  Golang, onde estou expandindo minhas habilidades e
-                  conhecimentos para complementar minha experiência.
-                  Estou constantemente aprendendo e me desafiando a melhorar
-                  cada dia mais.
-                </p>
-                <p class="content-paragraph">
-                  Para mais detalhes sobre minha trajetória ou para entrar em
-                  contato, visite meu perfil no LinkedIn.
-                </p>
+          <div class="column">
+            <div class="experiences">
+              <div class="experience-card">
+                <div class="experience-header">
+                  <h1>Full Stack Developer</h1>
+                </div>
+                <div class="experience-body">
+                  <p>LoboDeveloper</p>
+                  <p>2017-2019</p>
+                </div>
+                <div class="experience-footer">
+                  <p>
+                    Projetos para vendas de ingressos e controles de lojas.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="column">
-              <div class="experiences">
-                <div class="experience-card">
-                  <div class="experience-header">
-                    <h1>Full Stack Developer</h1>
-                  </div>
-                  <div class="experience-body">
-                    <p>LoboDeveloper</p>
-                    <p>2017-2019</p>
-                  </div>
-                  <div class="experience-footer">
-                    <p>
-                      Projetos para vendas de ingressos e controles de lojas.
-                    </p>
-                  </div>
+              <div class="experience-card">
+                <div class="experience-header">
+                  <h1>Back End Developer</h1>
                 </div>
-                <div class="experience-card">
-                  <div class="experience-header">
-                    <h1>Back End Developer</h1>
-                  </div>
-                  <div class="experience-body">
-                    <p>Incuca</p>
-                    <p>2019-2020</p>
-                  </div>
-                  <div class="experience-footer">
-                    <p>
-                      Projetos para gestão em diversas areas de negocio
-                    </p>
-                  </div>
+                <div class="experience-body">
+                  <p>Incuca</p>
+                  <p>2019-2020</p>
                 </div>
-                <div class="experience-card">
-                  <div class="experience-header">
-                    <h1>Back End Developer</h1>
-                  </div>
-                  <div class="experience-body">
-                    <p>MadeiraMadeira</p>
-                    <p>2021-Atualmente</p>
-                  </div>
-                  <div class="experience-footer">
-                    <p>
-                      Projetos em microsserviços para controle de logistica da
-                      empresa
-                    </p>
-                  </div>
+                <div class="experience-footer">
+                  <p>
+                    Projetos para gestão em diversas areas de negocio
+                  </p>
+                </div>
+              </div>
+              <div class="experience-card">
+                <div class="experience-header">
+                  <h1>Back End Developer</h1>
+                </div>
+                <div class="experience-body">
+                  <p>MadeiraMadeira</p>
+                  <p>2021-Atualmente</p>
+                </div>
+                <div class="experience-footer">
+                  <p>
+                    Projetos em microsserviços para controle de logistica da
+                    empresa
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- <a href="https://wa.me/91981994580" class="whatsapp-float"
         target="_blank">
         <i class="fab fa-whatsapp"></i>
       </a> -->
-
-      <footer class="footer">
-        <div class="footer__content">
-          <p class="footer__copyright">Wellington &copy; 2025. Todos os direitos
-            reservados.</p>
-        </div>
-      </footer>
     </div>
 
+    <footer>
+      <div class="footer-content">
+        <p class="footer-copyright"></p>
+      </div>
+    </footer>
+
     <script src="./js/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="./js/font-awesome.all.min.js"></script>
     <script src="./js/particles.min.js"></script>
     <script src="./js/backgroud-particles.js"> </script>
     <script src="./js/scripts.js"> </script>
